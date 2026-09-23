@@ -1,41 +1,39 @@
 # Práctica 2: Guardar los números pares
 ## 1. Descripción del problema (Fase 1)
-<!-- Explica con tus palabras qué hace tu programa y para qué serviría en la vida real. Máximo 4 líneas. -->
-
+El programa debe pedirle 5 numeros enteros al usuario y determinar cuales son pares. Los numeros pares se guardan en un arreglo y los impares se descartan.
 _____
 
 ## 2. Entradas y salidas (Fase 1)
 <!-- Define cada entrada y cada salida, con su tipo de dato y su objetivo. -->
 
 **Entradas:**
-1. _____
+1. 5 numeros enteros dados por el usuario
 
 **Salidas:**
-1. _____
-2. _____
+1. Mostarar cuantos pares encontro
+2. Cuales son
 
 ## 3. Restricciones e invariante (Fase 1 y 2)
 
 **Restricciones** (¿qué debe cumplirse?):
-- _____
-- _____
+- El programa debe recibir 5 números enteros y el arreglo debe tener capacidad para 5 elementos.
+- Solo se deben guardar los números pares.
 
 **Tamaño del arreglo y por qué** (piensa en el peor caso):
-_____
-
+El arreglo debe tener un tamaño de 5, porque en el peor caso los 5 numeros pueden ser pares
 **¿El 0 y los negativos son pares? ¿Por qué?**
-_____
+Si, el 0 es par porque es divisible entre 2. Los numeros negativos tambien pueden ser pares, por ejemplo -4, porque es divisible entre 2.
 
 **Invariante** (¿qué es verdad después de cada vuelta del ciclo?):
-_____
+El total de pares que lleva, ya qu representa exactamente la cantidad de numeros pares encontrados hasta ese momento y tambien indica la siguiente posicion libre del arreglo.
 
 ## 4. Casos resueltos a mano (Fase 1)
 
 | Caso | Números | Pares guardados | Posición de cada par |
 |---|---|---|---|
-| 1 | 3, 8, 5, 2, 7 | _____ | _____ |
-| 2 | _____ | _____ | _____ |
-| 3 | _____ | _____ | _____ |
+| 1 | 3, 8, 5, 2, 7 | 8,2 | 0=[8], 1=[2] |
+| 2 | 2, 4, 7, 9, 10 | 2,4,10 | 0=[2], 1=[4], 2=[10]|
+| 3 | 1, 6, 3, 8, 5 | 6,8 | 0=[6] 1=[8] |
 
 ## 5. Receta en pseudocódigo (Fase 2)
 <!-- Tu receta va en el archivo RECETA.md. Aquí solo responde las dos preguntas. -->
