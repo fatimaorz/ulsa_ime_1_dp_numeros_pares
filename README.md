@@ -68,20 +68,20 @@ En las posiciones que no llené aparecen valores desconocidos o basura de memori
 Porque el arreglo tiene 5 posiciones, pero solo se guardaron 4 números pares. Las otras posiciones no fueron inicializadas.
 
 **Experimento B: ¿qué pasó al usar la variable del ciclo como posición del arreglo? ¿Por qué?**
-Los pares se guardan en posiciones incorrectas, porque contador cuenta todas las vueltas del ciclo, incluyendo los números impares. Por eso el 8 se guarda en la posición 1 y el12en la posición 3, dejando espacios vacíos.
+Los pares se guardan en posiciones incorrectas, porque contador cuenta todas las vueltas del ciclo, incluyendo los números impares. Por eso el 8 se guarda en la posición 1 y el 12 en la posición 2, dejando espacios vacíos.
 
 ## 9. Tabla de pruebas (Fase 4)
 
 | Caso | Números | Esperado | Obtenido | ¿Pasó? |
 |---|---|---|---|---|
-| Mezcla | 1, 2, 3, 4, 5 | 2 pares: 2, 4 | _____ | _____ |
-| Posiciones distintas | 3, 8, 5, 2, 7 | 2 pares: 8, 2 | _____ | _____ |
-| Todos pares | 2, 4, 6, 8, 10 | 5 pares | _____ | _____ |
-| Todos impares | 1, 3, 5, 7, 9 | 0 pares | _____ | _____ |
-| Con cero y negativos | 0, -3, -4, 7, 1 | 2 pares: 0, -4 | _____ | _____ |
-| Entrada inválida | `hola` o `3.5` | vuelve a pedir | _____ | _____ |
-| Caso propio 1 | _____ | _____ | _____ | _____ |
-| Caso propio 2 | _____ | _____ | _____ | _____ |
+| Mezcla | 1, 2, 3, 4, 5 | 2 pares: 2, 4 | 2,4 | funciona |
+| Posiciones distintas | 3, 8, 5, 2, 7 | 2 pares: 8, 2 | 8,2| funciona |
+| Todos pares | 2, 4, 6, 8, 10 | 5 pares | 2,4,6,8,10 | funciona |
+| Todos impares | 1, 3, 5, 7, 9 | 0 pares | 0 | funiona |
+| Con cero y negativos | 0, -3, -4, 7, 1 | 2 pares: 0, -4 | 0,-4 | funciona |
+| Entrada inválida | `hola` o `3.5` | vuelve a pedir | pide numeros nuevos | funciona |
+| Caso propio 1 | 6,4,12,34,79 | 6,4,12,34, | 4 pares | funciona |
+| Caso propio 2 | 90,67,82,4,1 | 90,82,4 | 3 pares | funciona |
 
 ## 10. Bitácora de mejoras (Fase 4)
 
@@ -101,27 +101,23 @@ Los pares se guardan en posiciones incorrectas, porque contador cuenta todas las
 ## 12. Reflexión final
 
 **¿Qué aprendí con esta práctica?**
-_____
+Utilizar arreglos para guardar datos a identificar numeros pares utilizando el operador MOD y utilizar el contador
 
 **Ahora que terminé, ¿qué cambiaría de mi proceso?**
-_____
-
+Pienso que la manera en que lo desarrolle es correcta y me ayudo a tener oren y ressolverlo rapido 
 **¿Qué fue lo más difícil y cómo lo resolví?**
-_____
-
+Como guardar los numeros en la posiscion correcta. Aun que la receta despues me ayudo mucho
 **¿Qué pregunta me quedó sin responder?**
-_____
-
+Que otras formas existen para recorrer y guardar datos en un arreglo de forma mas sencilla 
 **¿Por qué no puedo usar la variable del ciclo para guardar en el arreglo?**
-_____
-
+La variable del ciclo cuenta con todas las vueltas, incluyendo los impares, si la uso para guardar pares pueden quedar espacios vacios entre ellos. Por eso se utiliza totalPares, que cuenta solo los pares que se han guardado
 ## 13. Lista de verificación antes de entregar (Fase 5)
 
-- [ ] Llené todas las secciones (no quedan `_____`)
-- [ ] Mi programa compila sin advertencias
-- [ ] Probé todos los casos de la tabla
-- [ ] Hice los Experimentos A y B y dejé el código correcto al terminar
-- [ ] No modifiqué `utilerias.h`
-- [ ] Hice al menos 3 commits con mensajes claros
-- [ ] Hice `git push` y verifiqué mi fork en GitHub
-- [ ] Entregué el enlace de mi fork en Classroom
+- [ /] Llené todas las secciones (no quedan `_____`)
+- [/] Mi programa compila sin advertencias
+- [/] Probé todos los casos de la tabla
+- [/] Hice los Experimentos A y B y dejé el código correcto al terminar
+- [/] No modifiqué `utilerias.h`
+- [/] Hice al menos 3 commits con mensajes claros
+- [/] Hice `git push` y verifiqué mi fork en GitHub
+- [/] Entregué el enlace de mi fork en Classroom
