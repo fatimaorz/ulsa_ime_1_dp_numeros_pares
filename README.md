@@ -38,8 +38,8 @@ El total de pares que lleva, ya qu representa exactamente la cantidad de numeros
 ## 5. Receta en pseudocódigo (Fase 2)
 <!-- Tu receta va en el archivo RECETA.md. Aquí solo responde las dos preguntas. -->
 
-**¿Probé mi receta a mano con un caso?** Sí / No
-**¿Tuve que corregirla?** _____
+**¿Probé mi receta a mano con un caso?** Sí 
+**¿Tuve que corregirla?** No
 
 ## 6. Cómo compilar y ejecutar (Fase 3)
 
@@ -49,19 +49,26 @@ g++ -Wall -Wextra -std=c++17 main.cpp -o numeros_pares
 ```
 
 ## 7. Ejemplo de ejecución (Fase 3)
-<!-- Pega aquí lo que muestra tu programa en pantalla con un caso normal. -->
-
-```
-_____
-```
+Guardar los numeros pares de 5 numeros
+Escribe un numero: 5
+Escribe un numero: 8
+Escribe un numero: 12
+Escribe un numero: 24
+Escribe un numero: 4
+Numero pares encontrados: 4
+8
+12
+24
+4
 
 ## 8. Experimentos (Fase 3)
 
 **Experimento A: ¿qué apareció al imprimir las 5 posiciones del arreglo? ¿Por qué?**
-_____
+En las posiciones que no llené aparecen valores desconocidos o basura de memoria, porque esas posiciones del arreglo nunca recibieron un valor.
+Porque el arreglo tiene 5 posiciones, pero solo se guardaron 4 números pares. Las otras posiciones no fueron inicializadas.
 
 **Experimento B: ¿qué pasó al usar la variable del ciclo como posición del arreglo? ¿Por qué?**
-_____
+Los pares se guardan en posiciones incorrectas, porque contador cuenta todas las vueltas del ciclo, incluyendo los números impares. Por eso el 8 se guarda en la posición 1 y el12en la posición 3, dejando espacios vacíos.
 
 ## 9. Tabla de pruebas (Fase 4)
 
